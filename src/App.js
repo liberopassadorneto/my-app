@@ -6,9 +6,9 @@ import ThankYou from './pages/ThankYouPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/my-app" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/singin" component={SingIn} />
         <Route path="/thankyou" component={ThankYou} />
       </Switch>
