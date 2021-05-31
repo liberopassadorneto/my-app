@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/my-app" exact component={Home} />
+        <Route exact path="/my-app" component={Home} />
         <Route path="/singin" component={SingIn} />
         <Route path="/thankyou" component={ThankYou} />
       </Switch>
